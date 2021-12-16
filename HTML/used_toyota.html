@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <header>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Linking the nav.css page to apply styling effects (dealership logo, search bar, tabs, dropdowns, etc.). -->
+    <link rel="stylesheet" href="../CSS/nav.css">
+    <!-- Linking the footer.css page to apply styling effects (columns, map, dealership logo, etc.). -->
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <!-- Linking the vehicle_inventory.css page to apply styling effects to the list of cars on each page. -->
+    <link rel="stylesheet" href="../CSS/vehicle_inventory.css">
+</header>
+
+<body>
+
+    <!-- Top navbar that contains the Logo and Search Bar. -->
+    <div class="navbar1">
+        <div class="logo-image">
+            <img src="../Images/automotive-logo.png" href="home.html" class="img-fluid">
+        </div>
+        <div class="search-container">
+            <form action="/action_page.php">
+                <input type="text" placeholder="Type here to search" name="search">
+                <button type="submit"><i class="fa fa-search"></i>Search</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Bottom navbar that contains the links and sub-links to the multiple pages. -->
+    <div class="navbar">
+        <a href="home.html">Home</a>
+        <div class="subnav">
+            <button class="subnavbtn">New Inventory<i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="./new_aston_martin.html">Aston Martin</a>
+                <a href="./new_audi.html">Audi</a>
+                <a href="./new_bmw.html">BMW</a>
+                <a href="./new_ferrari.html">Ferrari</a>
+                <a href="./new_honda.html">Honda</a>
+                <a href="./new_lamborghini.html">Lamborghini</a>
+                <a href="./new_mercedes_benz.html">Mercedes-Benz</a>
+                <a href="./new_toyota.html">Toyota</a>
+            </div>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn">Used Inventory<i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="./used_gmc.html">GMC</a>
+                <a href="./used_honda.html">Honda</a>
+                <a href="./used_mercedes_benz.html">Mercedes-Benz</a>
+                <a href="./used_toyota.html">Toyota</a>
+            </div>
+        </div>
+        <a href="finance.html">Finance</a>
+        <a href="service.html">Service</a>
+        <a href="about_us.html">About Us</a>
+    </div>
+
+    <!-- Photo/logo of manufacturer. -->
+    <div class="photo">
+        <img src="../Images/manufacturer/toyota_manufacturer.png" alt="photo" width="180px" height="180px" />
+    </div>
+
+    <!-- Title of the manufacturer and new/used. -->
+    <h5>Used Toyota Inventory</h5>
+
+    <!-- Container that represents all of the vehicles on page.  -->
+    <div class="vehicle-container">
+
+        <!-- The first vehicle listing. -->
+        <div class="row">
+            <div class="vehicle-slideshow">
+
+                <div class="mySlides1">
+                    <div class="numbertext">1 / 3</div>
+                    <img style="border-bottom: 1px solid #000000; border-top: 1px solid #000000;" src="../Images/inventory/used/toyota/toyota.jpg" width="100%" height="550px">
+                    <!-- <div class="text">Image 1</div> -->
+                </div>
+
+                <div class="mySlides1">
+                    <div class="numbertext">2 / 3</div>
+                    <img style="border-bottom: 1px solid #000000; border-top: 1px solid #000000;" src="../Images/inventory/used/toyota/toyota2.jpg" width="100%" height="550px">
+                    <!-- <div class="text">Image 2</div> -->
+                </div>
+
+                <div class="mySlides1">
+                    <div class="numbertext">3 / 3</div>
+                    <img style="border-bottom: 1px solid #000000; border-top: 1px solid #000000;" src="../Images/inventory/used/toyota/toyota3.jpg" width="100%" height="550px">
+                    <!-- <div class="text">Image 3</div> -->
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+
+            </div>
+
+            <div class="vehicle-information">
+                <h1>1995 Toyota Supra</h1>
+                <br>
+                <h4>$109,995</h4>
+                <br>
+                <ul class="spec">
+                    <li>Body: Coupe</li>
+                    <li>Passenger Capacity: 2</li>
+                    <li>Engine: 3.0L Twin-Turbo V-6</li>
+                    <li>Drivetrain: RWD (Rear Wheel Drive)</li>
+                    <li>Transmission: 6-Speed Manual</li>
+                    <li>Odometer: 17,000 Mile(s)</li>
+                    <li>Exterior Color: Alpine Silver Metallic</li>
+                    <li>Interior Color: Black</li>
+                    <li>Fuel Economy: 16 MPG City / 22 MPG Highway</li>
+                    <li>VIN #: T0Y12JD333SZ8GVS2</li>
+                    <li>Stock #: EM1000021</li>
+                </ul>
+
+                <br>
+
+                <p>Premium Features:</p>
+                <label for="tag-typer">
+                        <div id="tags">
+                          <span class="tag"><span class="close"></span>Spoiler</span>
+                          <span class="tag"><span class="close"></span>Removable Roof</span>
+                          <span class="tag"><span class="close"></span>Rear Window Wiber Blade</span>
+                        </div>
+                    </label>
+
+                <br>
+
+                <p>Comfort & Convenience:</p>
+                <label for="tag-typer">
+                        <div id="tags">
+                          <span class="tag2"><span class="close"></span>Leather Seats</span>
+                          <span class="tag2"><span class="close"></span>Cruise Control</span>
+                          <span class="tag2"><span class="close"></span>Traction Control</span>
+                        </div>
+                    </label>
+
+                <br>
+
+                <!-- Trigger/Open the Modal. -->
+                <button class="myBtn_multi"><b>Check Availability</b></button>
+                <!-- The Modal. -->
+                <div class="modal modal_multi">
+                    <!-- Vehicle availability form within the Modal. -->
+                    <div class="modal-content">
+                        <span class="close close_multi">×</span>
+
+                        <div class="availability">
+                            <div class="row">
+                                <div class="col-50">
+                                    <h1 style="text-align: center;">1995 Toyota Supra</h1>
+                                    <p style="text-align: center; padding: 5px;">* required field.</p>
+                                    <label for="fname"><i class="fa fa-fname"></i>First Name*:</label>
+                                    <input type="text" id="fname" name="firstname" placeholder="John">
+                                    <label for="lname"><i class="fa fa-lname"></i>Last Name*:</label>
+                                    <input type="text" id="lname" name="lastname" placeholder="Frederick">
+                                    <label for="wrkphone"><i class="fa fa-wrkphone"></i>Contact Phone:</label>
+                                    <input type="text" id="wrkphone" name="wrkphone" placeholder="(XXX) XXX-XXXX">
+                                    <label for="email"><i class="fa fa-email"></i>Email*:</label>
+                                    <input type="text" id="email" name="emailaddress" placeholder="john.frederick22@gmail.com">
+                                    <label for="zcode"><i class="fa fa-zcode"></i>Zip Code*:</label>
+                                    <input type="text" id="zcode" name="zipcode" placeholder="70032">
+                                </div>
+
+                                <input type="submit" value="Submit" class="btn" onclick="alert('Thank you! Your information has been submitted and one of our Sales Advisors will be in contact with you soon.')">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Linking the vehicle_inventory.js page to apply the overall functionality of two separate carousel images. -->
+    <script src="../JavaScript/vehicle_inventory.js"></script>
+
+    <!-- Linking the modal.js page to apply the overall functionality of the modal buttons. -->
+    <script src="../JavaScript/modal.js"></script>
+
+</body>
+
+<footer>
+
+    <!-- The first container of the footer that contains location, hours, and additional links. -->
+    <div class="container1">
+        <div class="row">
+            <div class="column">
+                <img src="../Images/automotive-logo.png" href="home.html" class="image">
+                <dl>12892 Hollow Moon Road</dl>
+                <dl>New Orleans, Louisiana</dl>
+                <dl>United States</dl>
+                <dl><a href="mailto:customer.support@extrememotors.com">customer.support@extrememotors.com</a></dl>
+                <dl><i class="fa fa-phone" style="font-size: 16px;"> (504) 265-4104</i></dl>
+            </div>
+            <div class="column">
+                <h2 style="padding-bottom: 10px;">Hours</h2>
+                <dl>Monday: 9:00 AM - 9:00 PM</dl>
+                <dl>Tuesday: 9:00 AM - 6:00 PM</dl>
+                <dl>Wednesday: 9:00 AM - 6:00 PM</dl>
+                <dl>Thursday: 9:00 AM - 9:00 PM</dl>
+                <dl>Friday: 9:00 AM - 6:00 PM</dl>
+                <dl>Saturday: 9:00 AM - 6:00 PM</dl>
+                <dl>Sunday: Closed</dl>
+            </div>
+            <div class="column">
+                <h2 style="padding-bottom: 10px;">Explore</h2>
+                <dl><a href="home.html">Home</a></dl>
+                <dl><a href="finance.html">Finance</a></dl>
+                <dl><a href="service.html">Service</a></dl>
+                <dl><a href="about_us.html">About Us</a></dl>
+            </div>
+        </div>
+    </div>
+
+    <!-- The second container of the footer that contains the embeded map and copyright. -->
+    <div class="container2">
+
+        <div class="map-responsive">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d221064.1160837495!2d-90.02264675577507!3d30.033219491827783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8620a454b2118265%3A0xdb065be85e22d3b4!2sNew%20Orleans%2C%20LA!5e0!3m2!1sen!2sus!4v1635381729110!5m2!1sen!2sus"></iframe>
+        </div>
+    </div>
+
+    <!-- The third container of the footer that contains the copyright. -->
+    <div class="container3">
+        <p>&copy; 2021 Extreme Motors Inc.</p>
+    </div>
+
+</footer>
+    
+</html>

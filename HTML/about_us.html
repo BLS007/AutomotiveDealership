@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <header>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Linking the nav.css page to apply styling effects (dealership logo, search bar, tabs, dropdowns, etc.). -->
+    <link rel="stylesheet" href="../CSS/nav.css">
+    <!-- Linking the our_team.css page to apply styling effects (introduction summary, automotive news picture, workers, etc.). -->
+    <link rel="stylesheet" href="../CSS/our_team.css">
+    <!-- Linking the footer.css page to apply styling effects (columns, map, dealership logo, etc.). -->
+    <link rel="stylesheet" href="../CSS/footer.css">
+</header>
+
+<body>
+
+    <!-- Top navbar that contains the Logo and Search Bar. -->
+    <div class="navbar1">
+        <div class="logo-image">
+            <img src="../Images/automotive-logo.png" href="home.html" class="img-fluid">
+        </div>
+        <div class="search-container">
+            <form action="/action_page.php">
+                <input type="text" placeholder="Type here to search" name="search">
+                <button type="submit"><i class="fa fa-search"></i>Search</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Bottom navbar that contains the links and sub-links to the multiple pages. -->
+    <div class="navbar">
+        <a href="home.html">Home</a>
+        <div class="subnav">
+            <button class="subnavbtn">New Inventory<i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="./new_aston_martin.html">Aston Martin</a>
+                <a href="./new_audi.html">Audi</a>
+                <a href="./new_bmw.html">BMW</a>
+                <a href="./new_ferrari.html">Ferrari</a>
+                <a href="./new_honda.html">Honda</a>
+                <a href="./new_lamborghini.html">Lamborghini</a>
+                <a href="./new_mercedes_benz.html">Mercedes-Benz</a>
+                <a href="./new_toyota.html">Toyota</a>
+            </div>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn">Used Inventory<i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="./used_gmc.html">GMC</a>
+                <a href="./used_honda.html">Honda</a>
+                <a href="./used_mercedes_benz.html">Mercedes-Benz</a>
+                <a href="./used_toyota.html">Toyota</a>
+            </div>
+        </div>
+        <a href="finance.html">Finance</a>
+        <a href="service.html">Service</a>
+        <a href="about_us.html">About Us</a>
+    </div>
+
+    <!-- Container that includes a summary of the dealership and a picture from automotive news. -->
+    <div class="about-section">
+        <h1 style="padding-bottom: 10px;">Why Buy From Extreme Motors?</h1>
+        <p style="padding-bottom: 10px;">Welcome to Extreme Motors! We are Louisiana's premier new and used car dealership, ready and willing to help you find what your looking for! Extreme Motors was founded by Jacques Rioux, Marcellus Rioux's father, in 1978. Since then, we have grown from selling new and used brands along the lines of GMC, Honda and Toyota to selling more luxurious brands. Brands such as BMW, Ferrari, Lamborghini and Mercedes-Benz were always Jacques vision for this dealership. Jacques vision eventually became a reality and has been retired from the dealership since 2010. When Jacques retired from the dealership in 2010, he passed the torch on to his son Marcellus.</p>
+        <p style="padding-bottom: 10px;">Marcellus worked with his father at the dealership since he was a child, Marcellus's first real job at Extreme Motors was in the 6th grade. He worked as a car detailer and over time worked his way up the ranks and learned everything about the company. Marcellus and his team continue to find better ways to improve the overall customer service experience here at Extreme Motors and their work has shown making Extreme Motors rated as one of the best dealerships to work for in 2021.</p>
+        <img src="../Images/awards/best_dealership_2021.jpg" alt="Marcellus" style="border: 1px solid #000000;">
+    </div>
+
+    <!-- Container that displays the header, individual cards for each employee with their contact information. -->
+    <div class="our-team">
+
+        <h2 style="text-align:center; padding: 10px; border-bottom: 1px solid #000000;">Meet Our Team!</h2>
+        <!-- The first row of employees, their are a total of three per row that are created from left to right. -->
+        <div class="row">
+            <!-- The first card from the first row. -->
+            <div class="column2">
+                <div class="card">
+                    <img src="../Images/team/marcellus_general_manager_team.jpg" alt="Marcellus" style="width:100%; border-bottom: 1px solid #000000;">
+                    <div class="container">
+                        <h2 style="text-align: center; padding-bottom: 5px;">Marcellus Rioux</h2>
+                        <p class="title" style="text-align: center; padding-bottom: 5px; color: #000000;"><i>Owner</i></p>
+                        <p style="text-align: center; padding-bottom: 5px; color: #000000;">Marcellus worked with his father to build Extreme Motors from the ground up, when his father got older in age he took over the business and has always found ways to make it better.</p>
+                        <!-- Trigger/Open the Modal. -->
+                        <button class="myBtn_multi"><b>Contact Information</b></button>
+                        <!-- The Modal. -->
+                        <div class="modal modal_multi">
+                            <!-- Contact information within the Modal. -->
+                            <div class="modal-content">
+                                <span class="close close_multi">×</span>
+                                <table style="width:70%">
+                                    <tr>
+                                        <th colspan="2">Marcellus Rioux - Contact Information</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Phone Number:</td>
+                                        <td>(305) 431-9317</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Email:</td>
+                                        <td><a href="mailto:marcellus.rioux@extrememotors.com">marcellus.rioux@extrememotors.com</a></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- The second card from the first row. -->
+            <div class="column2">
+                <div class="card">
+                    <img src="../Images/team/arturo_sales_team.jpg" alt="Mike" style="width:100%; border-bottom: 1px solid #000000;">
+                    <div class="container">
+                        <h2 style="text-align: center;  padding-bottom: 5px;">Arturo Schomburg</h2>
+                        <p class="title" style="text-align: center; padding-bottom: 5px; color: #000000;"><i>Sales Advisor</i></p>
+                        <p style="text-align: center; padding-bottom: 5px; color: #000000;">Arturo has been working for us since 2015. His favorite part of his job is turning his customers into friends. Arturo is well experienced and knowledgable in all of our vehicles we sell.</p>
+                        <!-- Trigger/Open the Modal. -->
+                        <button class="myBtn_multi"><b>Contact Information</b></button>
+                        <!-- The Modal. -->
+                        <div class="modal modal_multi">
+                            <!-- Contact information within the Modal. -->
+                            <div class="modal-content">
+                                <span class="close close_multi">×</span>
+                                <table style="width:70%">
+                                    <tr>
+                                        <th colspan="2">Arturo Schomburg - Contact Information</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Phone Number:</td>
+                                        <td>(305) 431-9422</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Email:</td>
+                                        <td><a href="mailto:arturo.schomburg@extrememotors.com">arturo.schomburg@extrememotors.com</a></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- The third card (last) from the first row. -->
+            <div class="column2">
+                <div class="card">
+                    <img src="../Images/team/bradley_sales_team.jpg" alt="Bradley" style="width:100%; border-bottom: 1px solid #000000;">
+                    <div class="container">
+                        <h2 style="text-align: center; padding-bottom: 5px;">Bradley Townsend</h2>
+                        <p class="title" style="text-align: center; padding-bottom: 5px; color: #000000;"><i>Sales Advisor</i></p>
+                        <p style="text-align: center; padding-bottom: 5px; color: #000000;">Bradley, also known as Brad, is one of our new sales advisors. Outside of Extreme Motors, he has over 15 years of sales experience in the automotive industry. Bradley has been a great addition to our team since he has joined.</p>
+                        <!-- Trigger/Open the Modal. -->
+                        <button class="myBtn_multi"><b>Contact Information</b></button>
+                        <!-- The Modal. -->
+                        <div class="modal modal_multi">
+                            <!-- Contact information within the Modal. -->
+                            <div class="modal-content">
+                                <span class="close close_multi">×</span>
+                                <table style="width:70%">
+                                    <tr>
+                                        <th colspan="2">Bradley Townsend - Contact Information</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Phone Number:</td>
+                                        <td>(305) 431-9294</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Email:</td>
+                                        <td><a href="mailto:bradley.townsend@extrememotors.com">bradley.townsend@extrememotors.com</a></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- The second row of employees, their are a total of three per row that are created from left to right. -->
+        <div class="row">
+            <!-- The first card from the second row. -->
+            <div class="column2">
+                <div class="card">
+                    <img src="../Images/team/margaret_finance_team.jpg" alt="Margaret" style="width:100%; border-bottom: 1px solid #000000;">
+                    <div class="container">
+                        <h2 style="text-align: center; padding-bottom: 5px;">Margaret Vittadini</h2>
+                        <p class="title" style="text-align: center; padding-bottom: 5px; color: #000000;"><i>Finance Manager</i></p>
+                        <p style="text-align: center; padding-bottom: 5px; color: #000000;">Margaret has been working here since 2018. Margaret previously spent the last few years as a Financial Analyst for Charles Schwab but wanted a change of pace from the corporate environment. Margaret has been a great finance manager for us and she is extremely efficient at what she does.</p>
+                        <!-- Trigger/Open the Modal. -->
+                        <button class="myBtn_multi"><b>Contact Information</b></button>
+                        <!-- The Modal. -->
+                        <div class="modal modal_multi">
+                            <!-- Contact information within the Modal. -->
+                            <div class="modal-content">
+                                <span class="close close_multi">×</span>
+                                <table style="width:70%">
+                                    <tr>
+                                        <th colspan="2">Margaret Vittadini - Contact Information</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Phone Number:</td>
+                                        <td>(305) 431-9121</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Email:</td>
+                                        <td><a href="mailto:margaret.vittadini@extrememotors.com">margaret.vittadini@extrememotors.com</a></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- The second card from the second row. -->
+            <div class="column2">
+                <div class="card">
+                    <img src="../Images/team/jack_finance_team.jpg" alt="Jack" style="width:100%; border-bottom: 1px solid #000000;">
+                    <div class="container">
+                        <h2 style="text-align: center; padding-bottom: 5px;">Jack Christiansen</h2>
+                        <p class="title" style="text-align: center; padding-bottom: 5px; color: #000000;"><i>Finance Manager</i></p>
+                        <p style="text-align: center; padding-bottom: 5px; color: #000000;">Jack is our newest member to our team. Jack as been a great asset so far to our Finance department. Jack recently graduated from Tulane University with a bachelors degree in Finance. He is a quick learner and enjoys working with customers in getting them the best deal within their budget.</p>
+                        <!-- Trigger/Open the Modal. -->
+                        <button class="myBtn_multi"><b>Contact Information</b></button>
+                        <!-- The Modal. -->
+                        <div class="modal modal_multi">
+                            <!-- Contact information within the Modal. -->
+                            <div class="modal-content">
+                                <span class="close close_multi">×</span>
+                                <table style="width:70%">
+                                    <tr>
+                                        <th colspan="2">Jack Christiansen - Contact Information</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Phone Number:</td>
+                                        <td>(305) 431-9137</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Email:</td>
+                                        <td><a href="mailto:jack.christiansen@extrememotors.com">jack.christiansen@extrememotors.com</a></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- The third card from the second row. -->
+            <div class="column2">
+                <div class="card">
+                    <img src="../Images/team/adam_technician_team.jpg" alt="Adam" style="width:100%; border-bottom: 1px solid #000000;">
+                    <div class="container">
+                        <h2 style="text-align: center; padding-bottom: 5px;">Adam McKinley</h2>
+                        <p class="title" style="text-align: center; padding-bottom: 5px; color: #000000;"><i>Technician</i></p>
+                        <p style="text-align: center; padding-bottom: 5px; color: #000000;">Adam has been with us since 2012. Adam used to work for his dad, who was also a mechanic, ever since he was a child. The years of experience that Adam has under his belt makes him one of the most experienced and efficient technicians in the area.</p>
+                        <!-- Trigger/Open the Modal. -->
+                        <button class="myBtn_multi"><b>Contact Information</b></button>
+                        <!-- The Modal. -->
+                        <div class="modal modal_multi">
+                            <!-- Contact information within the Modal. -->
+                            <div class="modal-content">
+                                <span class="close close_multi">×</span>
+                                <table style="width:70%">
+                                    <tr>
+                                        <th colspan="2">Adam McKinley - Contact Information</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Phone Number:</td>
+                                        <td>(305) 431-9473</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Email:</td>
+                                        <td><a href="mailto:adam.mckinley@extrememotors.com">adam.mckinley@extrememotors.com</a></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Linking the modal.js page to apply the overall functionality of the modal buttons. -->
+        <script src="../JavaScript/modal.js"></script>
+    </div>
+
+</body>
+
+<footer>
+
+    <!-- The first container of the footer that contains location, hours, and additional links. -->
+    <div class="container1">
+        <div class="row">
+            <div class="column">
+                <img src="../Images/automotive-logo.png" href="home.html" class="image">
+                <dl>12892 Hollow Moon Road</dl>
+                <dl>New Orleans, Louisiana</dl>
+                <dl>United States</dl>
+                <dl><a href="mailto:customer.support@extrememotors.com">customer.support@extrememotors.com</a></dl>
+                <dl><i class="fa fa-phone" style="font-size: 16px;"> (504) 265-4104</i></dl>
+            </div>
+            <div class="column">
+                <h2 style="padding-bottom: 10px;">Hours</h2>
+                <dl>Monday: 9:00 AM - 9:00 PM</dl>
+                <dl>Tuesday: 9:00 AM - 6:00 PM</dl>
+                <dl>Wednesday: 9:00 AM - 6:00 PM</dl>
+                <dl>Thursday: 9:00 AM - 9:00 PM</dl>
+                <dl>Friday: 9:00 AM - 6:00 PM</dl>
+                <dl>Saturday: 9:00 AM - 6:00 PM</dl>
+                <dl>Sunday: Closed</dl>
+            </div>
+            <div class="column">
+                <h2 style="padding-bottom: 10px;">Explore</h2>
+                <dl><a href="home.html">Home</a></dl>
+                <dl><a href="finance.html">Finance</a></dl>
+                <dl><a href="service.html">Service</a></dl>
+                <dl><a href="about_us.html">About Us</a></dl>
+            </div>
+        </div>
+    </div>
+
+    <!-- The second container of the footer that contains the embeded map and copyright. -->
+    <div class="container2">
+
+        <div class="map-responsive">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d221064.1160837495!2d-90.02264675577507!3d30.033219491827783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8620a454b2118265%3A0xdb065be85e22d3b4!2sNew%20Orleans%2C%20LA!5e0!3m2!1sen!2sus!4v1635381729110!5m2!1sen!2sus"></iframe>
+        </div>
+    </div>
+
+    <!-- The third container of the footer that contains the copyright. -->
+    <div class="container3">
+        <p>&copy; 2021 Extreme Motors Inc.</p>
+    </div>
+
+</footer>
+    
+</html>

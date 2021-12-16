@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+
+<html>
+
+<header>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Linking the nav.css page to apply styling effects (dealership logo, search bar, tabs, dropdowns, etc.). -->
+    <link rel="stylesheet" href="../CSS/nav.css">
+    <!-- Linking the footer.css page to apply styling effects (columns, map, dealership logo, etc.). -->
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <!-- Linking the footer.css page to apply styling effects (header, summary, forms, etc.). -->
+    <link rel="stylesheet" href="../CSS/finance_form.css">
+</header>
+
+<body>
+
+    <!-- Top navbar that contains the Logo and Search Bar. -->
+    <div class="navbar1">
+        <div class="logo-image">
+            <img src="../Images/automotive-logo.png" href="home.html" class="img-fluid">
+        </div>
+        <div class="search-container">
+            <form action="/action_page.php">
+                <input type="text" placeholder="Type here to search" name="search">
+                <button type="submit"><i class="fa fa-search"></i>Search</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Bottom navbar that contains the links and sub-links to the multiple pages. -->
+    <div class="navbar">
+        <a href="home.html">Home</a>
+        <div class="subnav">
+            <button class="subnavbtn">New Inventory<i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="./new_aston_martin.html">Aston Martin</a>
+                <a href="./new_audi.html">Audi</a>
+                <a href="./new_bmw.html">BMW</a>
+                <a href="./new_ferrari.html">Ferrari</a>
+                <a href="./new_honda.html">Honda</a>
+                <a href="./new_lamborghini.html">Lamborghini</a>
+                <a href="./new_mercedes_benz.html">Mercedes-Benz</a>
+                <a href="./new_toyota.html">Toyota</a>
+            </div>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn">Used Inventory<i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="./used_gmc.html">GMC</a>
+                <a href="./used_honda.html">Honda</a>
+                <a href="./used_mercedes_benz.html">Mercedes-Benz</a>
+                <a href="./used_toyota.html">Toyota</a>
+            </div>
+        </div>
+        <a href="finance.html">Finance</a>
+        <a href="service.html">Service</a>
+        <a href="about_us.html">About Us</a>
+    </div>
+
+    <!-- Container that includes a header and brief description on what the finance team can offer. -->
+    <h3>Apply For Credit Now And Save Time At The Dealership!</h3>
+
+    <p style="padding: 10px; border-right: 1px solid #000000; border-left: 1px solid #000000;">Applying for credit is easy, and you can get started financing a purchase or lease right here. Use the form below to provide us with the information we need to help find the payment and terms that work best for you.</p>
+
+    <p style="padding: 10px; border-right: 1px solid #000000; border-left: 1px solid #000000;">As soon as we process your information, one of our experienced Financial Managers will call you to review your options.</p>
+
+    <h4>Applicant Information</h4>
+
+    <p style="padding: 10px 500px 10px 500px; border-right: 1px solid #000000; border-left: 1px solid #000000; border-top: 1px solid #000000;">* required field.</p>
+
+    <!-- Applies formatting to the forms. -->
+    <div class="row2">
+
+        <!-- Applies additional formatting for the forms. -->
+        <div class="container">
+
+            <!-- Section of forms that require you to fill out information that aligns with your Billing Address. -->
+            <div class="row">
+                <div class="col-50">
+                    <h5>Billing Address</h5>
+                    <label for="name"><i class="fa fa-name"></i>Name*:</label>
+                    <input type="text" id="fname" name="firstname" placeholder="First Name">
+                    <input type="text" id="midname" name="middlename" placeholder="Middle Name (Optional)">
+                    <input type="text" id="lname" name="lastname" placeholder="Last Name">
+                    <label for="phone"><i class="fa fa-phone"></i>Phone Number*:</label>
+                    <input type="text" id="phn" name="phone" placeholder="(XXX) XXX-XXXX">
+                    <label for="email"><i class="fa fa-email"></i>Email*:</label>
+                    <input type="text" id="eml" name="email" placeholder="john.doe@gmail.com">
+                    <label for="name"><i class="fa fa-name"></i>Permanent Address*:</label>
+                    <input type="text" id="streetnumber" name="streetandnumber" placeholder="Street Address">
+                    <input type="text" id="streetnumber2" name="streetandnumber2" placeholder="Street Address Line 2 (Optional)">
+                    <input type="text" id="cty" name="city" placeholder="City">
+                    <select required id="stprv" name="stateprovince">
+                <option value="stateprovince"disabled selected hidden>Please Select State/Province</option>
+                <option value="alabama">Alabama</option>
+                <option value="alaska">Alaska</option>
+                <option value="arizona">Arizona</option>
+                <option value="arkansas">Arkansas</option>
+                <option value="california">California</option>
+                <option value="colorado">Colorado</option>
+                <option value="connecticut">Connecticut</option>
+                <option value="delaware">Delaware</option>
+                <option value="florida">Florida</option>
+                <option value="georgia">Georgia</option>
+                <option value="hawaii">Hawaii</option>
+                <option value="idaho">Idaho</option>
+                <option value="illinois">Illinois</option>
+                <option value="indiana">Indiana</option>
+                <option value="iowa">Iowa</option>
+                <option value="kansas">Kansas</option>
+                <option value="kentucky">Kentucky</option>
+                <option value="louisiana">Louisiana</option>
+                <option value="maine">Maine</option>
+                <option value="maryland">Maryland</option>
+                <option value="massachusetts">Massachusetts</option>
+                <option value="michigan">Michigan</option>
+                <option value="minnesota">Minnesota</option>
+                <option value="mississippi">Mississippi</option>
+                <option value="missouri">Missouri</option>
+                <option value="montana">Montana</option>
+                <option value="nebraska">Nebraska</option>
+                <option value="nevada">Nevada</option>
+                <option value="newhampshire">New Hampshire</option>
+                <option value="newjersey">New Jersey</option>
+                <option value="newmexico">New Mexico</option>
+                <option value="newyork">New York</option>
+                <option value="northcarolina">North Carolina</option>
+                <option value="northdakota">North Dakota</option>
+                <option value="ohio">Ohio</option>
+                <option value="oklahoma">Oklahoma</option>
+                <option value="oregon">Oregon</option>
+                <option value="pennsylvania">Pennsylvania</option>
+                <option value="rhodeisland">Rhode Island</option>
+                <option value="southcarolina">South Carolina</option>
+                <option value="southdakota">South Dakota</option>
+                <option value="tennessee">Tennessee</option>
+                <option value="texas">Texas</option>
+                <option value="utah">Utah</option>
+                <option value="vermont">Vermont</option>
+                <option value="virginia">Virginia</option>
+                <option value="washington">Washington</option>
+                <option value="washingtondc">Washington DC</option>
+                <option value="westvirginia">West Virginia</option>
+                <option value="wisconsin">Wisconsin</option>
+                <option value="wyoming">Wyoming</option>
+            </select>
+                    <input type="text" id="zip" name="zipcode" placeholder="Zip Code">
+                </div>
+            </div>
+
+            <!-- Section of forms that require you to fill out information that aligns with your Security & Employment. -->
+            <div class="row">
+                <div class="col-50">
+                    <h5>Security & Employment</h5>
+                    <label for="ssn"><i class="fa fa-ssn"></i>Social Security Number*:</label>
+                    <input type="text" id="ssn" name="socialsecuritynumber" placeholder="XXX-XX-XXXX">
+                    <label for="dob"><i class="fa fa-dob"></i>Date of Birth*:</label>
+                    <input type="text" id="dob" name="dateofbirth" placeholder="MM/DD/YYYY">
+                    <label for="marstat"><i class="fa fa-marstat"></i>Marital Status*:</label>
+                    <select required id="marstat" name="maritalstatus">
+                <option value="maritalstatus"disabled selected hidden>Please Select</option>
+                <option value="married">Married</option>
+                <option value="unmarried">Unmarried</option>
+                <option value="separated">Separated</option>
+            </select>
+                    <label for="empstat"><i class="fa fa-empstat"></i>Employment Status*:</label>
+                    <select required id="employstatus" name="employmentstatus">
+                <option value="employstatus"disabled selected hidden>Please Select</option>
+                <option value="employed">Employed</option>
+                <option value="unemployed">Unemployed</option>
+                <option value="retired">Retired</option>
+                <option value="activemilitary">Active Military</option>
+                <option value="retiredmilitary">Retired Military</option>
+                <option value="other">Other</option>
+                <option value="selfemployed">Self Employed</option>
+                <option value="student">Student</option>
+            </select>
+                    <label for="emp"><i class="fa fa-emp"></i>Employer*:</label>
+                    <input type="text" id="emp" name="employer" placeholder="Name of Employer">
+                    <label for="wrktitle"><i class="fa fa-wrktitle"></i>Work Title:</label>
+                    <input type="text" id="wrktitle" name="worktitle" placeholder="Work Title">
+                    <label for="wrkphone"><i class="fa fa-wrkphone"></i>Contact Phone*:</label>
+                    <input type="text" id="wrkphone" name="workphone" placeholder="(XXX) XXX-XXXX">
+                    <label for="tmcuremp"><i class="fa fa-tmcuremp"></i>Time at Current Employer*:</label>
+                    <select required id="tmcurempy" name="tmcurempy">
+                <option value="tmcurempy"disabled selected hidden>Please Select</option>
+                <option value="0y">0 years</option>
+                <option value="1y">1 year</option>
+                <option value="2y">2 years</option>
+                <option value="3y">3 years</option>
+                <option value="4y">4 years</option>
+                <option value="5y">5 years</option>
+                <option value="6y">6 years</option>
+                <option value="7y">7 years</option>
+                <option value="8y">8 years</option>
+                <option value="9y">9 years</option>
+                <option value="10y">10 years</option>
+                <option value="11y">11 years</option>
+                <option value="12y">12 years</option>
+                <option value="13y">13 years</option>
+                <option value="14y">14 years</option>
+                <option value="15y">15 years</option>
+                <option value="16y">16 years</option>
+                <option value="17y">17 years</option>
+                <option value="18y">18 years</option>
+                <option value="19y">19 years</option>
+                <option value="20y">20 years</option>
+                <option value="21y">21 years</option>
+                <option value="22y">22 years</option>
+                <option value="23y">23 years</option>
+                <option value="24y">24 years</option>
+                <option value="25y">25 years</option>
+                <option value="26y">26 years</option>
+                <option value="27y">27 years</option>
+                <option value="28y">28 years</option>
+                <option value="29y">29 years</option>
+                <option value="30y">30 years</option>
+                <option value="31y">31 years</option>
+                <option value="32y">32 years</option>
+                <option value="33y">33 years</option>
+                <option value="34y">34 years</option>
+                <option value="35y">35 years</option>
+                <option value="36y">36 years</option>
+                <option value="37y">37 years</option>
+                <option value="38y">38 years</option>
+                <option value="39y">39 years</option>
+                <option value="40y">40 years</option>
+                <option value="41y">41 years</option>
+                <option value="42y">42 years</option>
+                <option value="43y">43 years</option>
+                <option value="44y">44 years</option>
+                <option value="45y">45 years</option>
+                <option value="46y">46 years</option>
+                <option value="47y">47 years</option>
+                <option value="48y">48 years</option>
+                <option value="49y">49 years</option>
+                <option value="50y">50 years</option>
+                <option value="51y">51 years</option>
+                <option value="52y">52 years</option>
+                <option value="53y">53 years</option>
+                <option value="54y">54 years</option>
+                <option value="55y">55 years</option>
+                <option value="56y">56 years</option>
+                <option value="57y">57 years</option>
+                <option value="58y">58 years</option>
+                <option value="59y">59 years</option>
+                <option value="60y">60 years</option>
+            </select>
+                    <select required id="tmcurempm" name="tmcurempm">
+                <option value="tmcurtempm"disabled selected hidden>Please Select</option>
+                <option value="0m">0 months</option>
+                <option value="1m">1 month</option>
+                <option value="2m">2 months</option>
+                <option value="3m">3 months</option>
+                <option value="4m">4 months</option>
+                <option value="5m">5 months</option>
+                <option value="6m">6 months</option>
+                <option value="7m">7 months</option>
+                <option value="8m">8 months</option>
+                <option value="9m">9 months</option>
+                <option value="10m">10 months</option>
+                <option value="11m">11 months</option>
+            </select>
+                    <label for="salwaginc"><i class="fa fa-salwaginc"></i>Salary/Wages/Income*:</label>
+                    <select required id="salwaginc" name="salwaginc">
+                <option value="salwaginc"disabled selected hidden>Please Select</option>
+                <option value="weekly">Weekly</option>
+                <option value="biweekly">Bi-Weekly</option>
+                <option value="monthly">Monthly</option>
+                <option value="annually">Annually</option>
+            </select>
+                    <input type="text" id="swiprc" name="swiprc" placeholder="Please Insert Income Based On What You Chose Above">
+                    <label for="tmcuremp"><i class="fa fa-tmcuremp"></i>Other Income (Monthly)*:</label>
+                    <select required id="tmcuremp" name="tmcuremp">
+                <option value="tmcuremp"disabled selected hidden>Please Select</option>
+                <option value="ohio">Salary/Wages</option>
+                <option value="ohio">Incentive or Bonus Income</option>
+                <option value="ohio">Retirement</option>
+                <option value="ohio">Child Support</option>
+                <option value="ohio">Family or Spousal Support (Alimony)</option>
+                <option value="ohio">Disability</option>
+                <option value="ohio">Housing Allowance</option>
+                <option value="ohio">Military Allowance</option>
+                <option value="ohio">Municipal Bond Interest</option>
+                <option value="ohio">Public Assistance Programs</option>
+                <option value="ohio">Social Security Benefits</option>
+                <option value="ohio">Workers' Compensation</option>
+                <option value="ohio">Other (Taxable)</option>
+                <option value="ohio">Other (Non-Taxable)</option>
+            </select>
+                    <input type="text" id="swiprc" name="swiprc" placeholder="Please Insert Monthly Income Based On What You Chose Above">
+                </div>
+            </div>
+
+            <label>
+                <input type="checkbox" name="agreeterms"> I have read and agree to the terms of the Privacy Notice.
+            </label>
+
+            <label>
+                <input type="checkbox" name="authorize"> I have read and agree to the Terms Of Use. By submitting this application, I authorize you to check my credit report.
+            </label>
+
+            <input type="submit" value="Submit" class="btn" onclick="alert('Thank you! Your information has been submitted and one of our Financial Managers will be in contact with you soon.')">
+
+        </div>
+    </div>
+
+</body>
+
+<footer>
+
+    <!-- The first container of the footer that contains location, hours, and additional links. -->
+    <div class="container1">
+        <div class="row">
+            <div class="column">
+                <img src="../Images/automotive-logo.png" href="home.html" class="image">
+                <dl>12892 Hollow Moon Road</dl>
+                <dl>New Orleans, Louisiana</dl>
+                <dl>United States</dl>
+                <dl><a href="mailto:customer.support@extrememotors.com">customer.support@extrememotors.com</a></dl>
+                <dl><i class="fa fa-phone" style="font-size: 16px;"> (504) 265-4104</i></dl>
+            </div>
+            <div class="column">
+                <h2 style="padding-bottom: 10px;">Hours</h2>
+                <dl>Monday: 9:00 AM - 9:00 PM</dl>
+                <dl>Tuesday: 9:00 AM - 6:00 PM</dl>
+                <dl>Wednesday: 9:00 AM - 6:00 PM</dl>
+                <dl>Thursday: 9:00 AM - 9:00 PM</dl>
+                <dl>Friday: 9:00 AM - 6:00 PM</dl>
+                <dl>Saturday: 9:00 AM - 6:00 PM</dl>
+                <dl>Sunday: Closed</dl>
+            </div>
+            <div class="column">
+                <h2 style="padding-bottom: 10px;">Explore</h2>
+                <dl><a href="home.html">Home</a></dl>
+                <dl><a href="finance.html">Finance</a></dl>
+                <dl><a href="service.html">Service</a></dl>
+                <dl><a href="about_us.html">About Us</a></dl>
+            </div>
+        </div>
+    </div>
+
+    <!-- The second container of the footer that contains the embeded map and copyright. -->
+    <div class="container2">
+
+        <div class="map-responsive">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d221064.1160837495!2d-90.02264675577507!3d30.033219491827783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8620a454b2118265%3A0xdb065be85e22d3b4!2sNew%20Orleans%2C%20LA!5e0!3m2!1sen!2sus!4v1635381729110!5m2!1sen!2sus"></iframe>
+        </div>
+    </div>
+
+    <!-- The third container of the footer that contains the copyright. -->
+    <div class="container3">
+        <p>&copy; 2021 Extreme Motors Inc.</p>
+    </div>
+
+</footer>
+
+</html>

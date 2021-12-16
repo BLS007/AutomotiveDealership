@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+
+<html>
+
+<header>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Linking the nav.css page to apply styling effects (dealership logo, search bar, tabs, dropdowns, etc.). -->
+    <link rel="stylesheet" href="../CSS/nav.css">
+    <!-- Linking the footer.css page to apply styling effects (columns, map, dealership logo, etc.). -->
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <!-- Linking the footer.css page to apply styling effects (header, summary, forms, etc.). -->
+    <link rel="stylesheet" href="../CSS/service.css">
+</header>
+
+<body>
+
+    <!-- Top navbar that contains the Logo and Search Bar. -->
+    <div class="navbar1">
+        <div class="logo-image">
+            <img src="../Images/automotive-logo.png" href="home.html" class="img-fluid">
+        </div>
+        <div class="search-container">
+            <form action="/action_page.php">
+                <input type="text" placeholder="Type here to search" name="search">
+                <button type="submit"><i class="fa fa-search"></i>Search</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Bottom navbar that contains the links and sub-links to the multiple pages. -->
+    <div class="navbar">
+        <a href="home.html">Home</a>
+        <div class="subnav">
+            <button class="subnavbtn">New Inventory<i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="./new_aston_martin.html">Aston Martin</a>
+                <a href="./new_audi.html">Audi</a>
+                <a href="./new_bmw.html">BMW</a>
+                <a href="./new_ferrari.html">Ferrari</a>
+                <a href="./new_honda.html">Honda</a>
+                <a href="./new_lamborghini.html">Lamborghini</a>
+                <a href="./new_mercedes_benz.html">Mercedes-Benz</a>
+                <a href="./new_toyota.html">Toyota</a>
+            </div>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn">Used Inventory<i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="./used_gmc.html">GMC</a>
+                <a href="./used_honda.html">Honda</a>
+                <a href="./used_mercedes_benz.html">Mercedes-Benz</a>
+                <a href="./used_toyota.html">Toyota</a>
+            </div>
+        </div>
+        <a href="finance.html">Finance</a>
+        <a href="service.html">Service</a>
+        <a href="about_us.html">About Us</a>
+    </div>
+
+    <!-- Container that includes a header and brief description on what the service team can offer. -->
+    <h1 style="padding: 10px; text-align: center; border-right: 1px solid #000000; border-left: 1px solid #000000; color: #000000;">Service & Parts Specials at Extreme Motors</h1>
+
+    <p style="padding: 10px; border-right: 1px solid #000000; border-left: 1px solid #000000;">When it comes to automotive service and maintenance, what dealership can you trust to get the job done right the first time? Extreme Motors proudly serves the Louisiana and surrounding areas with exceptional vehicle repair services. With some of the best and most experienced technicians in the surrounding Louisiana area, why go anywhere else? Our technicians have experience in a wide range of vehicles ranging from manufacturers such as Honda all the way to Ferrari and have the certifications required to work on your vehicle.</p>
+
+    <p style="padding: 10px; border-right: 1px solid #000000; border-left: 1px solid #000000; border-bottom: 1px solid #000000;">Bring your new or used vehicle in to Extreme Motors today! Trust our professional team to take care of you and your vehicle. We'll get you into our service center and back on the road in no time! Please refer to our service specials below!</p>
+
+    <!-- Container that holds all of the service special cards. -->
+    <div class="service-specials">
+        <!-- Container that places all of the cards in a single file row. -->
+        <div class="row">
+            <!-- The first card from the first row. -->
+            <div class="column2">
+                <div class="card">
+                    <img src="../Images/service/service_image_1.jpeg" alt="Battery" style="width:100%; border-bottom: 1px solid #000000;">
+                    <div class="container">
+                        <h2 style="text-align: center; padding-bottom: 5px;">Battery Replacement & Installation Service</h2>
+                        <p class="title" style="text-align: center; padding-bottom: 5px; color: green; font-size: 20px;"><i>$139.95</i></p>
+                        <p style="text-align: center; padding-bottom: 5px; color: #000000;">24-month complimentary replacement. 84-month limited warranty. Complimentary multi-point inspection.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- The second card from the first row. -->
+            <div class="column2">
+                <div class="card">
+                    <img src="../Images/service/service_image_2.jpeg" alt="Oil" style="width:100%; border-bottom: 1px solid #000000;">
+                    <div class="container">
+                        <h2 style="text-align: center; padding-bottom: 5px;">Oil Change Service</h2>
+                        <p class="title" style="text-align: center; padding-bottom: 5px; color: green; font-size: 20px;"><i>$49.95</i></p>
+                        <p style="text-align: center; padding-bottom: 5px; color: #000000;">Includes installation of manufacturer oil filter and recommended oil for specific vehicle. Complimentary multi-point inspection.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- The third card from the first row. -->
+            <div class="column2">
+                <div class="card">
+                    <img src="../Images/service/service_image_3.jpeg" alt="Tire" style="width:100%; border-bottom: 1px solid #000000;">
+                    <div class="container">
+                        <h2 style="text-align: center; padding-bottom: 5px;">Tire Rotation and Balance Service</h2>
+                        <p class="title" style="text-align: center; padding-bottom: 5px; color: green; font-size: 20px;"><i>$49.95</i></p>
+                        <p style="text-align: center; padding-bottom: 5px; color: #000000;">Rotate and balance 4 tires. Check and adjust tire pressure. Complimentary multi-point inspection.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- The fourth card from the first row. -->
+            <div class="column2">
+                <div class="card">
+                    <img src="../Images/service/service_image_4.jpeg" alt="SparkPlug" style="width:100%; border-bottom: 1px solid #000000;">
+                    <div class="container">
+                        <h2 style="text-align: center; padding-bottom: 5px;">Spark Plug Replacement & Installation Service</h2>
+                        <p class="title" style="text-align: center; padding-bottom: 5px; color: green; font-size: 20px;"><i>$39.95</i></p>
+                        <p style="text-align: center; padding-bottom: 5px; color: #000000;">Includes installation of recommended spark plug for specific vehicle. Complimentary multi-point inspection.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <h4>Service Form</h4>
+
+    <p style="padding: 10px 500px 10px 500px; border-right: 1px solid #000000; border-left: 1px solid #000000; border-top: 1px solid #000000; border-bottom: 1px solid #000000;">* required field.</p>
+
+    <!-- Applies formatting for the forms. -->
+    <div class="row2">
+        <!-- Applies additional formatting for the forms. -->
+        <div class="form-container">
+            <!-- Section fo the forms that require you to fill out information that aligns with your Vehicle Information. -->
+            <div class="row">
+                <div class="col-50">
+                    <h5>Vehicle Information</h5>
+                    <label for="vin"><i class="fa fa-vin"></i>VIN (Optional):</label>
+                    <input type="text" id="vin" name="vehicleidentificationnumber" placeholder="Ex. 1HGBH41JXMN109186">
+                    <label for="make"><i class="fa fa-make"></i>Make*:</label>
+                    <select required id="stprv" name="stateprovince">
+                            <option value="stateprovince"disabled selected hidden>Please Select Vehicle Manufacturer</option>
+                            <option value="amgeneral">AM General</option>
+                            <option value="acura">Acura</option>
+                            <option value="alfaromeo">Alfa Romeo</option>
+                            <option value="americanlafrance">American La France</option>
+                            <option value="americanmotors">American Motors</option>
+                            <option value="astonmartin">Aston Martin</option>
+                            <option value="audi">Audi</option>
+                            <option value="bmw">BMW</option>
+                            <option value="bentley">Bentley</option>
+                            <option value="bertone">Bertone</option>
+                            <option value="bugatti">Bugatti</option>
+                            <option value="buick">Buick</option>
+                            <option value="cadillac">Cadillac</option>
+                            <option value="chevrolet">Chevrolet</option>
+                            <option value="chrysler">Chrysler</option>
+                            <option value="daewoo">Daewoo</option>
+                            <option value="daihatsu">Daihatsu</option>
+                            <option value="datsun">Datsun</option>
+                            <option value="dodge">Dodge</option>
+                            <option value="eagle">Eagle</option>
+                            <option value="ferrari">Ferrari</option>
+                            <option value="fiat">Fiat</option>
+                            <option value="fisker">Fisker</option>
+                            <option value="ford">Ford</option>
+                            <option value="geo">GEO</option>
+                            <option value="gmc">GMC</option>
+                            <option value="genesis">Genesis</option>
+                            <option value="honda">Honda</option>
+                            <option value="hummer">Hummer</option>
+                            <option value="hyundai">Hyundai</option>
+                            <option value="infiniti">Infiniti</option>
+                            <option value="jaguar">Jaguar</option>
+                            <option value="jeep">Jeep</option>
+                            <option value="kia">Kia</option>
+                            <option value="koenigsegg">Koenigsegg</option>
+                            <option value="lamborghini">Lamborghini</option>
+                            <option value="landrover">Land Rover</option>
+                            <option value="lexus">Lexus</option>
+                            <option value="lincoln">Lincoln</option>
+                            <option value="lotus">Lotus</option>
+                            <option value="maserati">Maserati</option>
+                            <option value="mazda">Mazda</option>
+                            <option value="mclaren">McLaren</option>
+                            <option value="mercedesbenz">Mercedes-Benz</option>
+                            <option value="mercury">Mercury</option>
+                            <option value="mini">Mini</option>
+                            <option value="mitsubishi">Mitsubishi</option>
+                            <option value="oldsmobile">Oldsmobile</option>
+                            <option value="peugeot">Peugeot</option>
+                            <option value="plymouth">Plymouth</option>
+                            <option value="pontiac">Pontiac</option>
+                            <option value="porsche">Porsche</option>
+                            <option value="ram">RAM</option>
+                            <option value="rangerover">Range Rover</option>
+                            <option value="renault">Renault</option>
+                            <option value="rivian">Rivian</option>
+                            <option value="rollsroyce">Rolls-Royce</option>
+                            <option value="saab">Saab</option>
+                            <option value="saturn">Saturn</option>
+                            <option value="subaru">Subaru</option>
+                            <option value="suzuki">Suzuki</option>
+                            <option value="tesla">Tesla</option>
+                            <option value="toyota">Toyota</option>
+                            <option value="volkswagen">Volkswagen</option>
+                        </select>
+                    <label for="year"><i class="fa fa-year"></i>Year*:</label>
+                    <input type="text" id="year" name="yearofvehicle" placeholder="Ex. 2011">
+                    <label for="model"><i class="fa fa-model"></i>Model*:</label>
+                    <input type="text" id="model" name="modelofvehicle" placeholder="Ex. Corvette">
+                    <label for="mileage"><i class="fa fa-mileage"></i>Mileage*:</label>
+                    <input type="text" id="mileage" name="mileageofvehicle" placeholder="Ex. 12,485">
+                </div>
+            </div>
+
+            <!-- Section fo the forms that require you to fill out information that aligns with Scheduling Service. -->
+            <div class="row">
+                <div class="col-50">
+                    <h5> Schedule Service</h5>
+                    <label for="issue"><i class="fa fa-issue"></i>Please explain what issues you are having with your vehicle in the box below*:</label>
+                    <input type="text" id="issue" name="issueexplanation" placeholder="Ex. I have a punctured tire and it needs to either be replaced or patched.">
+                    <label for="transportation"><i class="fa fa-transportation"></i>Will you be dropping off your vehicle or waiting in the lounge?*:</label>
+                    <select required id="transportation" name="transportation">
+                            <option value="transportation"disabled selected hidden>Please Select Which Option Suits You Best</option>
+                            <option value="dropoff">Dropping Off</option>
+                            <option value="wait">Waiting</option>
+                        </select>
+                    <label for="transportation"><i class="fa fa-transportation"></i>Please select which time slot will work best with your schedule*:</label>
+                    <table style="width:100%">
+                        <tr>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednesday</th>
+                            <th>Thursday</th>
+                            <th>Friday</th>
+                            <th>Saturday</th>
+                        </tr>
+                        <tr>
+                            <td style="color: green;">9:00 AM</td>
+                            <td style="color: red;">9:00 AM</td>
+                            <td style="color: red;">9:00 AM</td>
+                            <td style="color: green;">9:00 AM</td>
+                            <td style="color: red;">9:00 AM</td>
+                            <td style="color: green;">9:00 AM</td>
+                        </tr>
+                        <tr>
+                            <td style="color: red;">9:30 AM</td>
+                            <td style="color: green;">9:30 AM</td>
+                            <td style="color: red;">9:30 AM</td>
+                            <td style="color: red;">9:30 AM</td>
+                            <td style="color: red;">9:30 AM</td>
+                            <td style="color: red;">9:30 AM</td>
+                        </tr>
+                        <tr>
+                            <td style="color: green;">10:00 AM</td>
+                            <td style="color: green;">10:00 AM</td>
+                            <td style="color: green;">10:00 AM</td>
+                            <td style="color: green;">10:00 AM</td>
+                            <td style="color: green;">10:00 AM</td>
+                            <td style="color: green;">10:00 AM</td>
+                        </tr>
+                        <tr>
+                            <td style="color: red;">10:30 AM</td>
+                            <td style="color: red;">10:30 AM</td>
+                            <td style="color: green;">10:30 AM</td>
+                            <td style="color: red;">10:30 AM</td>
+                            <td style="color: red;">10:30 AM</td>
+                            <td style="color: red;">10:30 AM</td>
+                        </tr>
+                        <tr>
+                            <td style="color: red;">11:00 AM</td>
+                            <td style="color: green;">11:00 AM</td>
+                            <td style="color: red;">11:00 AM</td>
+                            <td style="color: red;">11:00 AM</td>
+                            <td style="color: red;">11:00 AM</td>
+                            <td style="color: green;">11:00 AM</td>
+                        </tr>
+                        <tr>
+                            <td style="color: red;">11:30 AM</td>
+                            <td style="color: red;">11:30 AM</td>
+                            <td style="color: red;">11:30 AM</td>
+                            <td style="color: green;">11:30 AM</td>
+                            <td style="color: red;">11:30 AM</td>
+                            <td style="color: red;">11:30 AM</td>
+                        </tr>
+                        <tr>
+                            <td style="color: red;">12:00 PM</td>
+                            <td style="color: green;">12:00 PM</td>
+                            <td style="color: red;">12:00 PM</td>
+                            <td style="color: red;">12:00 PM</td>
+                            <td style="color: green;">12:00 PM</td>
+                            <td style="color: red;">12:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td style="color: red;">12:30 PM</td>
+                            <td style="color: red;">12:30 PM</td>
+                            <td style="color: red;">12:30 PM</td>
+                            <td style="color: red;">12:30 PM</td>
+                            <td style="color: green;">12:30 PM</td>
+                            <td style="color: green;">12:30 PM</td>
+                        </tr>
+                        <tr>
+                            <td style="color: red;">1:00 PM</td>
+                            <td style="color: green;">1:00 PM</td>
+                            <td style="color: red;">1:00 PM</td>
+                            <td style="color: red;">1:00 PM</td>
+                            <td style="color: red;">1:00 PM</td>
+                            <td style="color: red;">1:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td style="color: red;">1:30 PM</td>
+                            <td style="color: green;">1:30 PM</td>
+                            <td style="color: red;">1:30 PM</td>
+                            <td style="color: red;">1:30 PM</td>
+                            <td style="color: green;">1:30 PM</td>
+                            <td style="color: red;">1:30 PM</td>
+                        </tr>
+                        <tr>
+                            <td style="color: red;">2:00 PM</td>
+                            <td style="color: red;">2:00 PM</td>
+                            <td style="color: red;">2:00 PM</td>
+                            <td style="color: red;">2:00 PM</td>
+                            <td style="color: green;">2:00 PM</td>
+                            <td style="color: red;">2:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td style="color: red;">2:30 PM</td>
+                            <td style="color: red;">2:30 PM</td>
+                            <td style="color: red;">2:30 PM</td>
+                            <td style="color: green;">2:30 PM</td>
+                            <td style="color: red;">2:30 PM</td>
+                            <td style="color: red;">2:30 PM</td>
+                        </tr>
+                        <tr>
+                            <td style="color: red;">3:00 PM</td>
+                            <td style="color: red;">3:00 PM</td>
+                            <td style="color: red;">3:00 PM</td>
+                            <td style="color: red;">3:00 PM</td>
+                            <td style="color: red;">3:00 PM</td>
+                            <td style="color: red;">3:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td style="color: red;">3:30 PM</td>
+                            <td style="color: red;">3:30 PM</td>
+                            <td style="color: red;">3:30 PM</td>
+                            <td style="color: red;">3:30 PM</td>
+                            <td style="color: red;">3:30 PM</td>
+                            <td style="color: green;">3:30 PM</td>
+                        </tr>
+                        <tr>
+                            <td style="color: red;">4:00 PM</td>
+                            <td style="color: green;">4:00 PM</td>
+                            <td style="color: red;">4:00 PM</td>
+                            <td style="color: red;">4:00 PM</td>
+                            <td style="color: red;">4:00 PM</td>
+                            <td style="color: red;">4:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td style="color: red;">4:30 PM</td>
+                            <td style="color: red;">4:30 PM</td>
+                            <td style="color: red;">4:30 PM</td>
+                            <td style="color: green;">4:30 PM</td>
+                            <td style="color: red;">4:30 PM</td>
+                            <td style="color: red;">4:30 PM</td>
+                        </tr>
+                        <tr>
+                            <td style="color: red;">5:00 PM</td>
+                            <td style="color: red;">5:00 PM</td>
+                            <td style="color: red;">5:00 PM</td>
+                            <td style="color: red;">5:00 PM</td>
+                            <td style="color: green;">5:00 PM</td>
+                            <td style="color: red;">5:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td style="color: red;">5:30 PM</td>
+                            <td style="color: red;">5:30 PM</td>
+                            <td style="color: red;">5:30 PM</td>
+                            <td style="color: red;">5:30 PM</td>
+                            <td style="color: green;">5:30 PM</td>
+                            <td style="color: red;">5:30 PM</td>
+                        </tr>
+                        <tr>
+                            <td style="color: red;">6:00 PM</td>
+                            <td style="color: red;">CLOSED</td>
+                            <td style="color: red;">CLOSED</td>
+                            <td style="color: green;">6:00 PM</td>
+                            <td style="color: red;">CLOSED</td>
+                            <td style="color: red;">CLOSED</td>
+                        </tr>
+                        <tr>
+                            <td style="color: red;">6:30 PM</td>
+                            <td style="color: red;">CLOSED</td>
+                            <td style="color: red;">CLOSED</td>
+                            <td style="color: red;">6:30 PM</td>
+                            <td style="color: red;">CLOSED</td>
+                            <td style="color: red;">CLOSED</td>
+                        </tr>
+                        <tr>
+                            <td style="color: red;">7:00 PM</td>
+                            <td style="color: red;">CLOSED</td>
+                            <td style="color: red;">CLOSED</td>
+                            <td style="color: green;">7:00 PM</td>
+                            <td style="color: red;">CLOSED</td>
+                            <td style="color: red;">CLOSED</td>
+                        </tr>
+                        <tr>
+                            <td style="color: green;">7:30 PM</td>
+                            <td style="color: red;">CLOSED</td>
+                            <td style="color: red;">CLOSED</td>
+                            <td style="color: red;">7:30 PM</td>
+                            <td style="color: red;">CLOSED</td>
+                            <td style="color: red;">CLOSED</td>
+                        </tr>
+                        <tr>
+                            <td style="color: red;">8:00 PM</td>
+                            <td style="color: red;">CLOSED</td>
+                            <td style="color: red;">CLOSED</td>
+                            <td style="color: red;">8:00 PM</td>
+                            <td style="color: red;">CLOSED</td>
+                            <td style="color: red;">CLOSED</td>
+                        </tr>
+                        <tr>
+                            <td style="color: red;">8:30 PM</td>
+                            <td style="color: red;">CLOSED</td>
+                            <td style="color: red;">CLOSED</td>
+                            <td style="color: green;">8:30 PM</td>
+                            <td style="color: red;">CLOSED</td>
+                            <td style="color: red;">CLOSED</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Section fo the forms that require you to fill out information that aligns with your Contact Information. -->
+            <div class="row">
+                <div class="col-50">
+                    <h5>Contact Information</h5>
+                    <label for="fname"><i class="fa fa-fname"></i>First Name*:</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Ex. John">
+                    <label for="lname"><i class="fa fa-lname"></i>Last Name*:</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Ex. Smith">
+                    <label for="email"><i class="fa fa-email"></i>Email*:</label>
+                    <input type="text" id="email" name="emailaddress" placeholder="Ex. john.smith@gmail.com">
+                    <label for="wrkphone"><i class="fa fa-wrkphone"></i>Contact Phone*:</label>
+                    <input type="text" id="wrkphone" name="workphone" placeholder="(XXX) XXX-XXXX">
+                </div>
+            </div>
+
+            <label for="reminder"><i class="fa fa-reminder"></i>Send me reminders and updates by:</label>
+
+            <label>
+                    <input type="checkbox" name="emailbox"> Email
+                </label>
+
+            <label>
+                    <input type="checkbox" name="textmessagebox"> Text Message
+                </label>
+
+            <input type="submit" value="Submit" class="btn" onclick="alert('Thank you! Your information has been submitted and one of our Service Advisors will be in contact with you soon.')">
+
+        </div>
+    </div>
+
+</body>
+
+<footer>
+
+    <!-- The first container of the footer that contains location, hours, and additional links. -->
+    <div class="container1">
+        <div class="row">
+            <div class="column">
+                <img src="../Images/automotive-logo.png" href="home.html" class="image">
+                <dl>12892 Hollow Moon Road</dl>
+                <dl>New Orleans, Louisiana</dl>
+                <dl>United States</dl>
+                <dl><a href="mailto:customer.support@extrememotors.com">customer.support@extrememotors.com</a></dl>
+                <dl><i class="fa fa-phone" style="font-size: 16px;"> (504) 265-4104</i></dl>
+            </div>
+            <div class="column">
+                <h2 style="padding-bottom: 10px;">Hours</h2>
+                <dl>Monday: 9:00 AM - 9:00 PM</dl>
+                <dl>Tuesday: 9:00 AM - 6:00 PM</dl>
+                <dl>Wednesday: 9:00 AM - 6:00 PM</dl>
+                <dl>Thursday: 9:00 AM - 9:00 PM</dl>
+                <dl>Friday: 9:00 AM - 6:00 PM</dl>
+                <dl>Saturday: 9:00 AM - 6:00 PM</dl>
+                <dl>Sunday: Closed</dl>
+            </div>
+            <div class="column">
+                <h2 style="padding-bottom: 10px;">Explore</h2>
+                <dl><a href="home.html">Home</a></dl>
+                <dl><a href="finance.html">Finance</a></dl>
+                <dl><a href="service.html">Service</a></dl>
+                <dl><a href="about_us.html">About Us</a></dl>
+            </div>
+        </div>
+    </div>
+
+    <!-- The second container of the footer that contains the embeded map and copyright. -->
+    <div class="container2">
+
+        <div class="map-responsive">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d221064.1160837495!2d-90.02264675577507!3d30.033219491827783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8620a454b2118265%3A0xdb065be85e22d3b4!2sNew%20Orleans%2C%20LA!5e0!3m2!1sen!2sus!4v1635381729110!5m2!1sen!2sus"></iframe>
+        </div>
+    </div>
+
+    <!-- The third container of the footer that contains the copyright. -->
+    <div class="container3">
+        <p>&copy; 2021 Extreme Motors Inc.</p>
+    </div>
+
+</footer>
+
+</html>

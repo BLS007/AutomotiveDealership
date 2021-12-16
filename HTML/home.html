@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+
+<html>
+    <header>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Linking the nav.css page to apply styling effects (dealership logo, search bar, tabs, dropdowns, etc.). -->
+    <link rel="stylesheet" href="../CSS/nav.css">
+    <!-- Linking the carousel.css page to apply styling effects. -->
+    <link rel="stylesheet" href="../CSS/carousel.css">
+    <!-- Linking the cards.css page to apply styling effects (discounted car deals). -->
+    <link rel="stylesheet" href="../CSS/cards.css">
+    <!-- Linking the manufacturer.css page to apply styling effects (manufacturer logos). -->
+    <link rel="stylesheet" href="../CSS/manufacturer.css">
+    <!-- Linking the footer.css page to apply styling effects (columns, map, dealership logo, etc.). -->
+    <link rel="stylesheet" href="../CSS/footer.css">
+</header>
+
+<body>
+
+    <!-- Top navbar that contains the Logo and Search Bar. -->
+    <div class="navbar1">
+        <div class="logo-image">
+            <img src="../Images/automotive-logo.png" href="home.html" class="img-fluid">
+        </div>
+        <div class="search-container">
+            <form action="/action_page.php">
+                <input type="text" placeholder="Type here to search" name="search">
+                <button type="submit"><i class="fa fa-search"></i>Search</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Bottom navbar that contains the links and sub-links to the multiple pages. -->
+    <div class="navbar">
+        <a href="home.html">Home</a>
+        <div class="subnav">
+            <button class="subnavbtn">New Inventory<i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="./new_aston_martin.html">Aston Martin</a>
+                <a href="./new_audi.html">Audi</a>
+                <a href="./new_bmw.html">BMW</a>
+                <a href="./new_ferrari.html">Ferrari</a>
+                <a href="./new_honda.html">Honda</a>
+                <a href="./new_lamborghini.html">Lamborghini</a>
+                <a href="./new_mercedes_benz.html">Mercedes-Benz</a>
+                <a href="./new_toyota.html">Toyota</a>
+            </div>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn">Used Inventory<i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="./used_gmc.html">GMC</a>
+                <a href="./used_honda.html">Honda</a>
+                <a href="./used_mercedes_benz.html">Mercedes-Benz</a>
+                <a href="./used_toyota.html">Toyota</a>
+            </div>
+        </div>
+        <a href="finance.html">Finance</a>
+        <a href="service.html">Service</a>
+        <a href="about_us.html">About Us</a>
+    </div>
+
+    <!-- Slideshow container with images for each manufacturer. -->
+    <div class="slideshow-container fade">
+
+        <!-- Full images with numbers, message information, and manual back and forward buttons that were left out to keep consistency within the page. -->
+        <div class="Containers">
+            <!--<div class="MessageInfo">1 / 9</div>-->
+            <img src="../Images/carousel/aston_martin_carousel.jpg">
+            <!--<div class="Info">First caption</div>-->
+        </div>
+
+        <div class="Containers">
+            <!--<div class="MessageInfo">2 / 9</div>-->
+            <img src="../Images/carousel/audi_carousel.jpg">
+            <!--<div class="Info">Second Caption</div>-->
+        </div>
+
+        <div class="Containers">
+            <!--<div class="MessageInfo">3 / 9</div>-->
+            <img src="../Images/carousel/bmw_carousel.jpg">
+            <!--<div class="Info">Third Caption</div>-->
+        </div>
+
+        <div class="Containers">
+            <!--<div class="MessageInfo">4 / 9</div>-->
+            <img src="../Images/carousel/ferrari_carousel.jpg">
+            <!--<div class="Info">Fourth Caption</div>-->
+        </div>
+
+        <div class="Containers">
+            <!--<div class="MessageInfo">5 / 9</div>-->
+            <img src="../Images/carousel/gmc_carousel.jpg">
+            <!--<div class="Info">Fifth Caption</div>-->
+        </div>
+
+        <div class="Containers">
+            <!--<div class="MessageInfo">6 / 9</div>-->
+            <img src="../Images/carousel/honda_carousel.jpg">
+            <!--<div class="Info">Sixth Caption</div>-->
+        </div>
+
+        <div class="Containers">
+            <!--<div class="MessageInfo">7 / 9</div>-->
+            <img src="../Images/carousel/lamborghini_carousel.jpg">
+            <!--<div class="Info">Seventh Caption</div>-->
+        </div>
+
+        <div class="Containers">
+            <!--<div class="MessageInfo">8 / 9</div>-->
+            <img src="../Images/carousel/mercedes_benz_carousel.jpg">
+            <!--<div class="Info">Eight Caption</div>-->
+        </div>
+
+        <div class="Containers">
+            <!--<div class="MessageInfo">9 / 9</div>-->
+            <img src="../Images/carousel/toyota_carousel.jpg">
+            <!--<div class="Info">Ninth Caption</div>-->
+        </div>
+
+        <!-- Back and forward buttons -->
+        <!--<a class="Back" onclick="plusSlides(-1)">&#10094;</a>-->
+        <!--<a class="forward" onclick="plusSlides(1)">&#10095;</a>-->
+
+    </div>
+
+    <!-- Linking the carousel.js page to apply the overall functionality of the carousel images. -->
+    <script src="../JavaScript/carousel.js"></script>
+
+    <!-- A container that represents individual logos for each manufacturer that we sell. -->
+    <div class="manufacturer">
+        <div class="photo">
+            <img src="../Images/manufacturer/aston_martin_manufacturer.jpg" alt="photo" />
+        </div>
+        <div class="photo">
+            <img src="../Images/manufacturer/audi_manufacturer.png" alt="photo" />
+        </div>
+        <div class="photo">
+            <img src="../Images/manufacturer/bmw_manufacturer.png" alt="photo" />
+        </div>
+        <div class="photo">
+            <img src="../Images/manufacturer/ferrari_manufacturer.png" alt="photo" />
+        </div>
+        <div class="photo">
+            <img src="../Images/manufacturer/gmc_manufacturer.png" alt="photo" />
+        </div>
+        <div class="photo">
+            <img src="../Images/manufacturer/honda_manufacturer.png" alt="photo" />
+        </div>
+        <div class="photo">
+            <img src="../Images/manufacturer/lamborghini_manufacturer.png" alt="photo" />
+        </div>
+        <div class="photo">
+            <img src="../Images/manufacturer/mercedes_benz_manufacturer.png" alt="photo" />
+        </div>
+        <div class="photo">
+            <img src="../Images/manufacturer/toyota_manufacturer.png" alt="photo" />
+        </div>
+    </div>
+
+    <!-- Header to represent the New and Used car deals. -->
+    <h1 style="border-top: 1px solid #000000; border-right: 1px solid #000000; border-left: 1px solid #000000; text-align: center; padding-top: 6px; padding-bottom: 6px; color: #000000;">New & Used Current Car Deals!</h1>
+
+    <!-- Overall container that holds all of the individual cards. -->
+    <div class="wrapper">
+        <!-- Container that holds all of the cards in place to apply styling. -->
+        <div class="cards_wrap">
+            <!-- The first card from left. -->
+            <div class="card_item" style="border-top: 1px solid #000000; border-left: 1px solid #000000; border-bottom: 1px solid #000000;">
+                <div class="card_inner">
+                    <div class="card_top">
+                        <div class="image-comment">
+                            <img src="../Images/special/civic_type_r_special.jpg" alt="car" / style="border: 1px solid #000000;">
+                            <div class="top-right">Discounted Price!!</div>
+                        </div>
+                    </div>
+                    <div class="card_bottom">
+                        <div class="card_category">
+                            2021 Honda Civic Type R Limited Edition
+                        </div>
+                        <div class="card_info">
+                            <p class="title1">
+                                New Price: $42,000
+                            </p>
+                            <p class="title2">
+                                Old Price: $47,495
+                            </p>
+                            <br>
+                            <p style="padding: 2px; text-align: center;">Body Style: Sedan</p>
+                            <p style="padding: 2px; text-align: center;">Engine Type: Gas</p>
+                            <p style="padding: 2px; text-align: center;">Engine: 2.0L 4 Cylinder Turbocharged</p>
+                            <p style="padding: 2px; text-align: center;">Drive Type: Front Wheel Drive</p>
+                            <p style="padding: 2px; text-align: center;">Transmission: 6-Speed Manual</p>
+                            <p style="padding: 2px; text-align: center;">Exterior Color: Phoenix Yellow</p>
+                            <p style="padding: 2px; text-align: center;">Interior Color: Black/Red</p>
+                            <p style="padding: 2px; text-align: center;">Mileage: 2</p>
+                            <p style="padding: 2px; text-align: center;">MPG: 22 City / 28 Highway</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- The second card from left. -->
+            <div class="card_item" style="border-top: 1px solid #000000; border-left: 1px solid #000000; border-bottom: 1px solid #000000;">
+                <div class="card_inner">
+                    <div class="card_top">
+                        <div class="image-comment">
+                            <img src="../Images/special/4runner_special.webp" alt="car" / style="border: 1px solid #000000;">
+                            <div class="top-right">Discounted Price!!</div>
+                        </div>
+                    </div>
+                    <div class="card_bottom">
+                        <div class="card_category">
+                            2022 Toyota 4Runner SR5
+                        </div>
+                        <div class="card_info">
+                            <p class="title1">
+                                New Price: $53,495
+                            </p>
+                            <p class="title2">
+                                Old Price: $57,995
+                            </p>
+                            <br>
+                            <p style="padding: 2px; text-align: center;">Body Style: SUV</p>
+                            <p style="padding: 2px; text-align: center;">Engine Type: Gas</p>
+                            <p style="padding: 2px; text-align: center;">Engine: 4.0L 6 Cylinder</p>
+                            <p style="padding: 2px; text-align: center;">Drive Type: Rear Wheel Drive</p>
+                            <p style="padding: 2px; text-align: center;">Transmission: 5-Speed Automatic</p>
+                            <p style="padding: 2px; text-align: center;">Exterior Color: Super White</p>
+                            <p style="padding: 2px; text-align: center;">Interior Color: Black Graphite</p>
+                            <p style="padding: 2px; text-align: center;">Mileage: 1</p>
+                            <p style="padding: 2px; text-align: center;">MPG: 16 City / 19 Highway</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- The third card from left. -->
+            <div class="card_item" style="border-top: 1px solid #000000; border-left: 1px solid #000000; border-bottom: 1px solid #000000;">
+                <div class="card_inner">
+                    <div class="card_top">
+                        <div class="image-comment">
+                            <img src="../Images/special/audi_special.jpg" alt="car" / style="border: 1px solid #000000;">
+                            <div class="top-right">Discounted Price!!</div>
+                        </div>
+                    </div>
+                    <div class="card_bottom">
+                        <div class="card_category">
+                            2020 Audi A4
+                        </div>
+                        <div class="card_info">
+                            <p class="title1">
+                                New Price: $42,000
+                            </p>
+                            <p class="title2">
+                                Old Price: $50,995
+                            </p>
+                            <br>
+                            <p style="padding: 2px; text-align: center;">Body Style: Sedan</p>
+                            <p style="padding: 2px; text-align: center;">Engine Type: Gas</p>
+                            <p style="padding: 2px; text-align: center;">Engine: 2.0L 4 Cylinder</p>
+                            <p style="padding: 2px; text-align: center;">Drive Type: All Wheel Drive</p>
+                            <p style="padding: 2px; text-align: center;">Transmission: 7-Speed Shiftable Automatic</p>
+                            <p style="padding: 2px; text-align: center;">Exterior Color: Monsoon Gray Metallic</p>
+                            <p style="padding: 2px; text-align: center;">Interior Color: Black</p>
+                            <p style="padding: 2px; text-align: center;">Mileage: 42,329</p>
+                            <p style="padding: 2px; text-align: center;">MPG: 24 City / 32 Highway</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- The fourth card from left. -->
+            <div class="card_item" style="border-top: 1px solid #000000; border-right: 1px solid #000000; border-left: 1px solid #000000; border-bottom: 1px solid #000000;">
+                <div class="card_inner">
+                    <div class="card_top">
+                        <div class="image-comment">
+                            <img src="../Images/special/mercedes_special.jpg" alt="car" / style="border: 1px solid #000000;">
+                            <div class="top-right">Discounted Price!!</div>
+                        </div>
+                    </div>
+                    <div class="card_bottom">
+                        <div class="card_category">
+                            2019 Mercedes-Benz AMG GT
+                        </div>
+                        <div class="card_info">
+                            <p class="title1">
+                                New Price: $94,995
+                            </p>
+                            <p class="title2">
+                                Old Price: $105,995
+                            </p>
+                            <br>
+                            <p style="padding: 2px; text-align: center;">Body Style: Coupe</p>
+                            <p style="padding: 2px; text-align: center;">Engine Type: Gas</p>
+                            <p style="padding: 2px; text-align: center;">Engine: 4.0L 8 Cylinder</p>
+                            <p style="padding: 2px; text-align: center;">Drive Type: All Wheel Drive</p>
+                            <p style="padding: 2px; text-align: center;">Transmission: 9-Speed Shiftable Automatic</p>
+                            <p style="padding: 2px; text-align: center;">Exterior Color: Midnight Black</p>
+                            <p style="padding: 2px; text-align: center;">Interior Color: Black</p>
+                            <p style="padding: 2px; text-align: center;">Mileage: 22,657</p>
+                            <p style="padding: 2px; text-align: center;">MPG: 19 City / 24 Highway</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<footer>
+
+    <!-- The first container of the footer that contains location, hours, and additional links. -->
+    <div class="container1">
+        <div class="row">
+            <div class="column">
+                <img src="../Images/automotive-logo.png" href="home.html" class="image">
+                <dl>12892 Hollow Moon Road</dl>
+                <dl>New Orleans, Louisiana</dl>
+                <dl>United States</dl>
+                <dl><a href="mailto:customer.support@extrememotors.com">customer.support@extrememotors.com</a></dl>
+                <dl><i class="fa fa-phone" style="font-size: 16px;"> (504) 265-4104</i></dl>
+            </div>
+            <div class="column">
+                <h2 style="padding-bottom: 10px;">Hours</h2>
+                <dl>Monday: 9:00 AM - 9:00 PM</dl>
+                <dl>Tuesday: 9:00 AM - 6:00 PM</dl>
+                <dl>Wednesday: 9:00 AM - 6:00 PM</dl>
+                <dl>Thursday: 9:00 AM - 9:00 PM</dl>
+                <dl>Friday: 9:00 AM - 6:00 PM</dl>
+                <dl>Saturday: 9:00 AM - 6:00 PM</dl>
+                <dl>Sunday: Closed</dl>
+            </div>
+            <div class="column">
+                <h2 style="padding-bottom: 10px;">Explore</h2>
+                <dl><a href="home.html">Home</a></dl>
+                <dl><a href="finance.html">Finance</a></dl>
+                <dl><a href="service.html">Service</a></dl>
+                <dl><a href="about_us.html">About Us</a></dl>
+            </div>
+        </div>
+    </div>
+
+    <!-- The second container of the footer that contains the embeded map. -->
+    <div class="container2">
+
+        <div class="map-responsive">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d221064.1160837495!2d-90.02264675577507!3d30.033219491827783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8620a454b2118265%3A0xdb065be85e22d3b4!2sNew%20Orleans%2C%20LA!5e0!3m2!1sen!2sus!4v1635381729110!5m2!1sen!2sus"></iframe>
+        </div>
+    </div>
+
+    <!-- The third container of the footer that contains the copyright. -->
+    <div class="container3">
+        <p>&copy; 2021 Extreme Motors Inc.</p>
+    </div>
+
+</footer>
+        
+</html>
