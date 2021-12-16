@@ -1,0 +1,106 @@
+/* The first container of the footer that contains location, hours, and additional links. */
+
+.container1 {
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    border-right: 1px solid #000000;
+    border-left: 1px solid #000000;
+}
+
+/* Styling for the three equal columns that float next to each other. */
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 20px;
+    height: auto;
+    background-color: #ADADAD;
+}
+
+/* Styling that clears the float after the columns. */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Styling for the "Extreme Motors" image. */
+
+.image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 60px;
+    width: 200px;
+    align-content: center;
+}
+
+/* Overall styling effects for the second header. */
+
+h2 {
+    color: #000000;
+}
+
+/* Overall styling effects for the lists in each column. */
+
+dl {
+    color: #000000;
+    font-size: 16px;
+    padding: 2px;
+}
+
+/* Overall styling effects for links under the "Explore" column. */
+
+a {
+    color: #000000;
+}
+
+/* Additional styling effects for links under the "Explore" column. */
+
+a:hover {
+    color: red;
+}
+
+/* The second container of the footer that contains the embeded map and copyright. */
+
+.container2 {
+    box-sizing: border-box;
+    padding: 10px;
+    border-right: 1px solid #000000;
+    border-left: 1px solid #000000;
+}
+
+/* Overall styling effects for the embeded map. */
+
+.map-responsive {
+    overflow: hidden;
+    padding-top: 60px;
+    padding-bottom: 20%;
+    position: relative;
+    height: 0;
+}
+
+/* Additional styling effects for the embeded map. */
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 400px;
+    width: 100%;
+    position: absolute;
+    padding: 4px;
+    border: 1px solid #000000;
+}
+
+/* The third container of the footer that contains the copyright. */
+
+.container3 {
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+    border: 1px solid #000000;
+    color: #000000;
+}

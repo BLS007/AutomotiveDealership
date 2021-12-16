@@ -1,0 +1,128 @@
+/* Overall styling effects for the whole page. */
+
+* {
+    box-sizing: border-box;
+    background-color: #ADADAD;
+}
+
+/* Slideshow container. */
+
+.slideshow-container {
+    position: static;
+    margin: auto;
+}
+
+/* Make the images invisible by default. */
+
+.Containers img {
+    overflow: hidden;
+    width: 100%;
+    height: 650px;
+    border-top: 0px solid #000000;
+    border-bottom: 1px solid #000000;
+    border-right: 1px solid #000000;
+    border-left: 1px solid #000000;
+}
+
+/* Forward and back buttons for the carousel (not included but kept if wanted to activate). */
+
+.Back,
+.forward {
+    cursor: pointer;
+    position: absolute;
+    top: 48%;
+    width: auto;
+    margin-top: -23px;
+    padding: 17px;
+    color: grey;
+    font-weight: bold;
+    font-size: 19px;
+    transition: 0.4s ease;
+    border-radius: 0 5px 5px 0;
+    user-select: none;
+}
+
+/* Place the "forward button" to the right (not included but kept if wanted to activate). */
+
+.forward {
+    right: 0;
+    border-radius: 4px 0 0 4px;
+}
+
+/* When the user hovers over the button it shows in a different color (not included but kept if wanted to activate). */
+
+.Back:hover,
+.forward:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption information for the carousel slides (not included but kept if wanted to activate). */
+
+.Info {
+    color: #e3e3e3;
+    font-size: 16px;
+    padding: 10px 14px;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Numbering for the carousel slides (not included but kept if wanted to activate). */
+
+.MessageInfo {
+    color: #f2f2f3;
+    font-size: 14px;
+    padding: 10px 14px;
+    position: absolute;
+    top: 0;
+}
+
+/* The circles or bullets and indicators for the carousel slides (not included but kept if wanted to activate). */
+
+.dots {
+    cursor: pointer;
+    height: 16px;
+    width: 16px;
+    margin: 0 3px;
+    background-color: #acc;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.5s ease;
+}
+
+/* PWhen the user hovers over the progression dots it shows in a different color (not included but kept if wanted to activate). */
+
+.enable,
+.dots:hover {
+    background-color: #717161;
+}
+
+/* Fading animation for the carousel slides. */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.4s;
+    animation-name: fade;
+    animation-duration: 1.4s;
+}
+
+/* Additional fading animation for the carousel slides. */
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .5
+    }
+    to {
+        opacity: 2
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .5
+    }
+    to {
+        opacity: 2
+    }
+}

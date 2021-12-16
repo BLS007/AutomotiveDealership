@@ -1,0 +1,23 @@
+/* Overall styling effects for the horizontal list of manufacturer images. */
+
+.manufacturer {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 px;
+    padding: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 0px solid #000000;
+    border-right: 1px solid #000000;
+    border-left: 1px solid #000000;
+}
+
+.photo {
+    max-width: 100%;
+    padding: 10px 30px;
+}
+
+.photo img {
+    width: 150px;
+    height: 150px;
+}

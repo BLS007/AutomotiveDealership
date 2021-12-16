@@ -1,0 +1,194 @@
+/* Overall styling effects for the content within the "Body" of the code. */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/* Overall styling effects for the whole page. */
+
+html {
+    box-sizing: border-box;
+}
+
+/* Overall styling effects for the first row. */
+
+.row {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+}
+
+/* Overall styling effects for the second row. */
+
+.row2 {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+    margin: 0 0px;
+    border: 1px solid #000000;
+}
+
+/* Overall styling effects for the 25% column. */
+
+.col-25 {
+    -ms-flex: 25%;
+    /* IE10 */
+    flex: 25%;
+    padding: 1px 0px 1px 0px;
+}
+
+/* Overall styling effects for the 50% column. */
+
+.col-50 {
+    -ms-flex: 50%;
+    /* IE10 */
+    flex: 50%;
+}
+
+/* Overall styling effects for the 75% column. */
+
+.col-75 {
+    -ms-flex: 75%;
+    /* IE10 */
+    flex: 75%;
+}
+
+/* Additional styling effects for the 25%, 50% & 75% column. */
+
+.col-25,
+.col-50,
+.col-75 {
+    padding: 0px 0px;
+}
+
+/* Overall styling effects for the container that holds all of the forms. */
+
+.container {
+    background-color: #ADADAD;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 0px;
+}
+
+/* Overall styling effects for the forms that dont include drop-downs. */
+
+input[type=text] {
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 4px 4px;
+    border: 1px solid #000000;
+    border-radius: 0px;
+    font-size: 16px;
+    color: #000000;
+}
+
+/* Overall styling effects for the forms that include drop-downs. */
+
+select {
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 4px 4px;
+    border: 1px solid #000000;
+    border-radius: 0px;
+    font-size: 16px;
+    color: #000000;
+}
+
+/* Overall styling effects for the labels that represent each form. */
+
+label {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    display: block;
+    color: #000000;
+}
+
+/* Overall styling effects for the "Submit" button. */
+
+.btn {
+    background-color: #ADADAD;
+    color: #000000;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #000000;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Overall styling effects for when you hover over the "Submit" button. */
+
+.btn:hover {
+    background-color: red;
+}
+
+/* Overall styling effects for the sub-links. */
+
+a {
+    color: #000000;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top). */
+
+@media (max-width: 800px) {
+    .row {
+        flex-direction: column-reverse;
+    }
+    .col-25 {
+        margin-bottom: 20px;
+    }
+}
+
+/* Overall styling effects for the second header. */
+
+h2 {
+    text-align: center;
+    color: #000000;
+}
+
+/* Overall styling effects for the third header. */
+
+h3 {
+    text-align: center;
+    color: #000000;
+    padding: 10px 500px 10px 500px;
+    font-size: 30px;
+    border-right: 1px solid #000000;
+    border-left: 1px solid #000000;
+}
+
+/* Overall styling effects for the fourth header. */
+
+h4 {
+    text-align: center;
+    color: #000000;
+    font-size: 25px;
+    padding: 10px 500px 10px 500px;
+    border-top: 1px solid #000000;
+    border-right: 1px solid #000000;
+    border-left: 1px solid #000000;
+}
+
+/* Overall styling effects for the fifth header. */
+
+h5 {
+    text-align: center;
+    color: #000000;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+/* Overall styling effects for the paragraphs above the page. */
+
+p {
+    text-align: center;
+    color: #000000;
+}

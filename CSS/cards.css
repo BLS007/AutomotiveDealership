@@ -1,0 +1,144 @@
+/* Overall styling effects for the whole page. */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Overall styling effects for the content within the "Body" of the code. */
+
+body {
+    background: #ADADAD;
+    color: #555555;
+    font-size: 16px;
+}
+
+/* Overall styling effects for the images within the home page. */
+
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* Styling effects for the comments within the car deals pictures. */
+
+.image-comment {
+    position: relative;
+    text-align: center;
+    color: #000000;
+}
+
+/* Additional styling effects for the comments within the car deals pictures. */
+
+.top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-size: 30px;
+    background-color: white;
+    text-shadow: 0 0 20px green;
+}
+
+/* Styling effects for the cards within the home page. */
+
+.wrapper {
+    width: 100%;
+    margin: 0px auto;
+}
+
+/* Additional styling effects for the cards within the home page. */
+
+.cards_wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Additional styling effects for the cards within the home page. */
+
+.cards_wrap .card_item {
+    width: 25%;
+    padding: 0px;
+    padding-bottom: 1px;
+}
+
+/* Styling effects for the images within the cards. */
+
+.cards_wrap .card_top {
+    width: 100%;
+    min-height: 225px;
+    padding: 10px;
+    padding-bottom: 0;
+}
+
+/* Styling effects for the title and descriptions within the cards. */
+
+.cards_wrap .card_bottom {
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 0px;
+    color: #000000;
+}
+
+/* Additional styling effects for the title within the cards. */
+
+.cards_wrap .card_bottom .card_category {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 20px;
+    color: #000000;
+}
+
+/* Additional styling effects for the description within the cards. */
+
+.cards_wrap .card_bottom .card_info {
+    padding: 10px;
+    margin: 10px 0px;
+    border: 1px solid #000000;
+}
+
+/* Styling effects for the green prices within the cards. */
+
+.cards_wrap .card_bottom .card_info .title1 {
+    text-align: center;
+    color: green;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+/* Styling effects for the red prices within the cards. */
+
+.cards_wrap .card_bottom .card_info .title2 {
+    text-align: center;
+    color: red;
+    font-size: 20px;
+    text-decoration: line-through;
+    margin-bottom: -5px;
+    margin-top: 10px;
+}
+
+/* Additional formatting for the cards. */
+
+@media (max-width: 1024px) {
+    .cards_wrap .card_item {
+        width: 33.3%;
+    }
+}
+
+@media (max-width: 768px) {
+    .cards_wrap .card_item {
+        width: 50%;
+    }
+}
+
+@media (max-width: 528px) {
+    .cards_wrap .card_top {
+        height: auto;
+    }
+    .cards_wrap .card_item {
+        width: 100%;
+    }
+}
