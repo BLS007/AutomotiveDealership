@@ -1,5 +1,5 @@
 # AutomotiveDealership
-## A dealership website that includes a home, finance, about us, and service page with the addition of multiple vehicle pages that include multiple vehicle listings.
+## A basic dealership website that includes a Home, Finance, About Us and Service page with the addition of multiple new and used car listings by manufacturer.
 
 ### Home Page
 
